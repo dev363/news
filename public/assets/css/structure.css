@@ -199,10 +199,3 @@ a.poplr_tagnav {
 .read-more {
     padding: 75px 0px;
 }
-
-.navbar-brand>img {
-    display: block;
-    position: relative;
-    margin-top: -5px;
-    max-width: 200px;
-}
