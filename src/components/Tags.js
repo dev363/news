@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import injectSheet from 'react-jss'
 const styles = {
   ulCol: {
@@ -6,20 +7,18 @@ const styles = {
   }
 }
 const Tags=({classes})=>{
-  // console.log(classes)
-  // // const classes= props.classes
-  // // console.log(classes)
+  
   return (
     <div className="single_blog_sidebar wow fadeInUp">
       <h2>Popular Tags</h2>
       <ul className="poplr_tagnav">
-        <li><a href="c/business" >Business</a></li>
-        <li><a href="c/entertainment">Entertainment</a></li>
-        <li><a href="c/general">General</a></li>
-        <li><a href="c/health">Health</a></li>
-        <li><a href="c/science">Science</a></li>
-        <li><a href="c/sports">Sports</a></li>
-        <li><a href="c/technology">Technology</a></li>
+        <li><Link to="/c/business">Business</Link></li>
+        <li><Link to="/c/entertainment">Entertainment</Link></li>
+        <li><Link to="/c/general">General</Link></li>
+        <li><Link to="/c/health">Health</Link></li>
+        <li><Link to="/c/science">Science</Link></li>
+        <li><Link to="/c/sports">Sports</Link></li>
+        <li><Link to="/c/technology">Technology</Link></li>        
       </ul>
     </div>
   )

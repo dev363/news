@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 export default function Header(){
   return(
     <header id="header">
@@ -7,26 +8,25 @@ export default function Header(){
           <div className="container-fluid">
             <div className="navbar-header">
               <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span className="sr-only">Toggle navigation</span> <span className="icon-bar"></span> <span className="icon-bar"></span> <span className="icon-bar"></span> </button>
-              <a className="navbar-brand" href="/"><img src="../logo.png" className="logo"/></a> </div>
+              <Link className="navbar-brand" to="/"><img src="../logo.png" className="logo"/></Link> </div>
             <div id="navbar" className="navbar-collapse collapse">
               <ul className="nav navbar-nav custom_nav">
-                <li className=""><a href="index.html">Home</a></li>
-                <li className="dropdown"> <a href="/" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jobs</a>
-                  <ul className="dropdown-menu" role="menu">
-                    <li className="dropdown"> <a className="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">Jobs Home</a> </li>
-                    <li><a href="#">Faq</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Article</a></li>
-                  </ul>
-                </li>
+                <li className=""><a href="/">Home</a></li>
+                <li><a href="/c/business">Business</a></li>
+                <li><a href="/c/entertainment">Entertainment</a></li>
+                <li><a href="/c/general">General</a></li>
+                <li><a href="/c/health">Health</a></li>
+                <li><a href="/c/science">Science</a></li>
+                <li><a href="/c/sports">Sports</a></li>
+                <li><a href="/c/technology">Technology</a></li>                
               </ul>
             </div>
           </div>
         </nav>
-        <form id="searchForm">
+        {/*<form id="searchForm">
           <input type="text" placeholder="Search..."/>
           <input type="submit" value=""/>
-        </form>
+        </form--->*/}
       </div>
     </header>
 )

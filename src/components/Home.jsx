@@ -16,7 +16,6 @@ function Home(){
 
             <div className="row">
 
-              <h2>Top Headlines</h2>
               <TopHeadlines  />
 
             </div>

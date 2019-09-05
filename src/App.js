@@ -8,12 +8,11 @@ import CategoryNews from "./components/CategoryNews"
 function App() {
   return (
     <div className="App">
-      <Header/>
       <Router>
+      <Header/>
         <Switch>
           <Route exact path="/c/:category" component={CategoryNews} />
           <Route path="/" component={Home}/>
-
         </Switch>
       </Router>
     </div>
