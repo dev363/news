@@ -12,13 +12,13 @@ export default function Header(){
             <div id="navbar" className="navbar-collapse collapse">
               <ul className="nav navbar-nav custom_nav">
                 <li className=""><a href="/">Home</a></li>
-                <li><Link to="/c/business">Business</Link></li>
-                <li><Link to="/c/entertainment">Entertainment</Link></li>
-                <li><Link to="/c/general">General</Link></li>
-                <li><Link to="/c/health">Health</Link></li>
-                <li><Link to="/c/science">Science</Link></li>
-                <li><Link to="/c/sports">Sports</Link></li>
-                <li><Link to="/c/technology">Technology</Link></li>                
+                <li><a href="/c/business">Business</a></li>
+                <li><a href="/c/entertainment">Entertainment</a></li>
+                <li><a href="/c/general">General</a></li>
+                <li><a href="/c/health">Health</a></li>
+                <li><a href="/c/science">Science</a></li>
+                <li><a href="/c/sports">Sports</a></li>
+                <li><a href="/c/technology">Technology</a></li>                
               </ul>
             </div>
           </div>

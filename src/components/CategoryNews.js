@@ -1,17 +1,11 @@
 import React,{useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import {NEWSAPI} from "../services/Api" 
+import {NEWSAPI} from "../services/Api"
 import Pagination from './Pagination';
-// import axios from 'axios';
-// import TopHeadlines from './TopHeadlines';
-// import WhatsHot from './WhatsHot';
-// import TheFeaturedStuff from './TheFeaturedStuff';
-// import Tags from './Tags';
-
 
 function CategoryNews(props){
-  // console.log("Url Perameter",)
-  const category= props.match.params.category
+  console.log("Url Perameter",props.match.params)
+  let category= props.match.params.category
   const [posts,setPosts]= useState([]);
   const [loading,setLoading]= useState(false);
   const [currentPage, setCurrentPage] = useState(1);
