@@ -5,13 +5,13 @@ import Pagination from './Pagination';
 
 function CategoryNews(props){
   console.log("Url Perameter",props.match.params)
-  fetchPosts();
   let category= props.match.params.category
   let [posts,setPosts]= useState([]);
   let [loading,setLoading]= useState(false);
   let [currentPage, setCurrentPage] = useState(1);
   let [postsPerPage] = useState(5);
   useEffect(()=>{
+    console.log(category)
     let fetchPosts= async()=>{
       setLoading(true);
       console.log(category)
@@ -20,7 +20,7 @@ function CategoryNews(props){
       setLoading(false)
     }
     fetchPosts();
-  },[])
+  },[category])
 
   let indexOfLastPost = currentPage * postsPerPage;
   let indexOfFirstPost = indexOfLastPost - postsPerPage;

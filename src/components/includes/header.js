@@ -8,7 +8,7 @@ export default function Header(){
           <div className="container-fluid">
             <div className="navbar-header">
               <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span className="sr-only">Toggle navigation</span> <span className="icon-bar"></span> <span className="icon-bar"></span> <span className="icon-bar"></span> </button>
-              <Link className="navbar-brand" to="/"><img src="../logo.png" className="logo"/></a> </div>
+              <Link className="navbar-brand" to="/"><img src="../logo.png" className="logo"/></Link> </div>
             <div id="navbar" className="navbar-collapse collapse">
               <ul className="nav navbar-nav custom_nav">
                 <li className=""><a href="/">Home</a></li>
