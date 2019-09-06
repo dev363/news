@@ -6,12 +6,12 @@ import Pagination from './Pagination';
 function CategoryNews(props){
   console.log("Url Perameter",props.match.params)
   let category= props.match.params.category
-  const [posts,setPosts]= useState([]);
-  const [loading,setLoading]= useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(5);
+  let [posts,setPosts]= useState([]);
+  let [loading,setLoading]= useState(false);
+  let [currentPage, setCurrentPage] = useState(1);
+  let [postsPerPage] = useState(5);
   useEffect(()=>{
-    const fetchPosts= async()=>{
+    let fetchPosts= async()=>{
       setLoading(true);
       console.log(category)
       let res= await NEWSAPI.NewsCategoryWise(category,50)
@@ -21,12 +21,12 @@ function CategoryNews(props){
     fetchPosts();
   },[])
 
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  let indexOfLastPost = currentPage * postsPerPage;
+  let indexOfFirstPost = indexOfLastPost - postsPerPage;
+  let currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   // Change page
-  const paginate = pageNumber => setCurrentPage(pageNumber);
+  let paginate = pageNumber => setCurrentPage(pageNumber);
   console.log(posts)
   return (
 
