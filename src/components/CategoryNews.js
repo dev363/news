@@ -27,6 +27,7 @@ function CategoryNews(props){
 
   // Change page
   let paginate = pageNumber => setCurrentPage(pageNumber);
+  console.log(category)
   console.log(posts)
   return (
 
