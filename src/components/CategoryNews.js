@@ -4,7 +4,6 @@ import {NEWSAPI} from "../services/Api"
 import Pagination from './Pagination';
 
 function CategoryNews(props){
-  console.log("Url Perameter",props.match.params)
   let category= props.match.params.category
   let [posts,setPosts]= useState([]);
   let [loading,setLoading]= useState(false);
@@ -28,10 +27,8 @@ function CategoryNews(props){
 
   // Change page
   let paginate = pageNumber => setCurrentPage(pageNumber);
-  console.log(category)
-  console.log(posts)
-  return (
 
+  return (
     <section id="contentbody">
       <div className="container">
         <div className="row">
