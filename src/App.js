@@ -11,8 +11,8 @@ function App() {
       <Router>
       <Header/>
         <Switch>
-          <Route exact path="/c/:category" component={CategoryNews} />
-          <Route path="/" component={Home}/>
+          <Route exact path="/" component={Home}/>
+          <Route path="/c/:category" component={CategoryNews} />
         </Switch>
       </Router>
     </div>
