@@ -13,7 +13,6 @@ function CategoryNews(props){
     console.log(category)
     let fetchPosts= async()=>{
       setLoading(true);
-      console.log(category)
       let res= await NEWSAPI.NewsCategoryWise(category,50)
       setPosts(res.data.articles);
       setLoading(false)
