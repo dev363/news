@@ -5,6 +5,7 @@ import Pagination from './Pagination';
 
 function CategoryNews(props){
   console.log("Url Perameter",props.match.params)
+  fetchPosts();
   let category= props.match.params.category
   let [posts,setPosts]= useState([]);
   let [loading,setLoading]= useState(false);
